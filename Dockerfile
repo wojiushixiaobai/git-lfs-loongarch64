@@ -33,7 +33,7 @@ FROM debian:buster-slim
 
 WORKDIR /opt/git-lfs
 
-COPY --from=builder /opt/git-lfs /opt/git-lfs/dist
+COPY --from=builder /opt /opt/git-lfs/dist
 
 VOLUME /dist
 
