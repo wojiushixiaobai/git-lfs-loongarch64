@@ -12,7 +12,7 @@ RUN set -ex \
     && apt-get install -y ${BUILD_DEPENDENCIES} \
     && echo "no" | dpkg-reconfigure dash
 
-ARG VERSION=v3.4.0
+ARG VERSION=v3.4.1
 
 RUN set -ex \
     && git clone -b ${VERSION} --depth=1 https://github.com/git-lfs/git-lfs /opt/git-lfs
